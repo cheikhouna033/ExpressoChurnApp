@@ -11,7 +11,7 @@ st.write("Prédisez si un client risque de se désabonner.")
 @st.cache_resource
 def load_model():
     # Chemin relatif dans le repo
-    pipeline = joblib.load("models/churn_model.pkl")
+    pipeline = joblib.load("churn_model.pkl")
     return pipeline
 
 pipeline = load_model()
